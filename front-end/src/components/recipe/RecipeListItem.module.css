@@ -21,5 +21,122 @@
 }
 
 .title {
-  color: #F3AA60
+  color: #F3AA60;
+  font-weight: 700;
+}
+
+
+.details {
+  background: #EF6262;
+  border: 1px solid #EF6262;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.details:hover,
+.details:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.details:active {
+  opacity: .5;
+}
+
+.edit {
+  background: #7CC4E7;
+  border: 1px solid #7CC4E7;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.edit:hover,
+.edit:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #7CC4E7;
+}
+
+.edit:active {
+  opacity: .5;
+}
+
+
+.delete {
+  background: #1D5B79;
+  border: 1px solid #1D5B79;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.delete:hover,
+.delete:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #1D5B79;
+}
+
+.delete:active {
+  opacity: .5;
+}
+
+.space {
+  width: 7px;
+  height: auto;
+  display: inline-block;
 }
