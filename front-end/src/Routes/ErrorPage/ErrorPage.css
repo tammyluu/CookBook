@@ -1,0 +1,19 @@
+.containerErrorPage{
+    width: 50%;
+    margin: 20% auto;
+    border-radius: 10px;
+    background-color: var(--black--);
+    color: var(--white--);
+    padding: 20px;
+}
+.LinkError{
+    text-decoration: none;
+    color: rgb(70, 139, 151);
+    border: solid rgb(70, 139, 151) 1px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.LinkError:hover{
+    background-color: rgb(70, 139, 151) ;
+    color: white;
+}
