@@ -1,0 +1,25 @@
+.card {
+  height: 200px;
+  width: 1000px;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 10px;
+  display: flex;
+  margin: auto;
+  padding: auto;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.img {
+  border-radius: 10px 0px 0 10px;
+  height: 200px;
+}
+
+.title {
+  color: #F3AA60
+}

@@ -1,0 +1,59 @@
+.modal {
+    position: fixed;
+    overflow-y: scroll;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalContent {
+    z-index: 2;
+    margin: 5vh auto;
+    padding: 2vh 2vw;
+    width: 80%;
+    max-width: 800px;
+    background-color: white;
+    color: black;
+    border-radius: 1rem;
+}
+  
+.close {
+    border-radius: 50%;
+    padding: 0.5em;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #1D5B79;
+    color: #1D5B79;
+    position: relative;
+
+  }
+  .close:hover {
+    border: 2px solid #1D5B79;
+    background-color: #89C6D0;
+    color: #ffffff;
+  }
+  
+  .close::before {
+    content: " ";
+    position: absolute;
+    display: block;
+    background-color: #1D5B79;
+    width: 2px;
+    left: 12px;
+    top: 5px;
+    bottom: 5px;
+    transform: rotate(45deg);
+  }
+  .close::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    background-color: #1D5B79;
+    height: 2px;
+    top:12px;
+    left: 5px;
+    right: 5px;
+    transform: rotate(45deg);
+  }
+  
