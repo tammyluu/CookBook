@@ -33,3 +33,5 @@ Créer un middleware d'authentification pour la création/modification des resso
   Formulaire de création d'une recette
   Page de gestion des recettes (modification, suppression)
   Page d'authentification.
+link UML: 
+Class - diagram : https://app.diagrams.net/#Htammyluu%2FCookBook%2Fmain%2FUML%2FClass%20Diagram.drawio
