@@ -42,7 +42,7 @@ export default class RecipeDao {
       
     }
     updateRecipe(recipeUpDate) {
-        const recipe = this.getOneById(recipeUpDate.id);
+        const recipe = this.getOneByID(recipeUpDate.id);
         console.log(recipe.id);
         if(recipe == undefined){
             return false

@@ -27,7 +27,7 @@ export default class RecipeDao {
         console.log(typeof recipe.ingredients);
             // Vérifier que les ingredients existent
         recipe.ingredients.forEach((ingr) => {
-          if (ingredientDao.getOneById(ingr.id) === undefined) {
+          if (ingredientDao.getOneByID(ingr.id) === undefined) {
             throw new Error(`Unable to find the ingredient with id: ${ingr.id}`);
           }
           
@@ -42,7 +42,7 @@ export default class RecipeDao {
       
     }
     updateRecipe(recipeUpDate) {
-        const recipe = this.getOneById(recipeUpDate.id);
+        const recipe = this.getOneByID(recipeUpDate.id);
         console.log(recipe.id);
         if(recipe == undefined){
             return false
@@ -58,7 +58,7 @@ export default class RecipeDao {
         recipe.slogan = recipeUpDate.slogan;
 
         DataStore.write();
-        console.log("Recette modified");
+        console.log("object modified");
         return true;
     }
     searchByName(name) {
