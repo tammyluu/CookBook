@@ -1,7 +1,8 @@
 import { useEffect, useRef } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { useNavigate, useSearchParams } from "react-router-dom"
-import { AddUserEmail, FetchUserEmail, signIn, signUp } from "./AuthSlice"
+import { signIn, signUp } from "./AuthSlice"
+import "LogPAge.module.css"
 
 
 export const LogPage=()=>{
@@ -49,7 +50,7 @@ useEffect(()=>{
         <input type="email" ref={emailRef} />
 
         <label htmlFor="">Password :</label>
-        <input type="password" ref={passwordRef}/>
+        <input type="password" ref={passwordRef} placeholder="*****"/>
         <div className="divButtonAuth">
         <button>{mode==="in"?"Log In":"Register"}</button>
         </div>

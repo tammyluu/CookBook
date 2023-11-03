@@ -14,6 +14,7 @@ function HomePage(){
         
         return(
             <>
+            <img className='imgBg' src="https://images.pexels.com/photos/6605903/pexels-photo-6605903.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="displaying food" />
     <ul className={styles.list}>
     {recipies.map((recipe) => (
         <RecipieListItem key={recipe.id} recipe={recipe}/>

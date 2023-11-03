@@ -1,8 +1,11 @@
-import { UseSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import {Navigate} from "react-router-dom"
 
+//This component will assure components with authentification required to be secured
+// <RouteProtector><ThisComponent/></RouteProtector>
+
 const RouteProtector = (props) => {
-    const user = UseSelector(stae.auth.user)
+    const user = useSelector(state.auth.user)
 
     if(user) {
         return(
