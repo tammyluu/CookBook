@@ -4,7 +4,7 @@ import axios from 'axios';
 export const fetchRecipes = createAsyncThunk(
     'recipes/fetchAll',
     async () => {
-      const response = await axios.get('http://localhost:5050/');
+      const response = await axios.get('http://127.0.0.1:5050/recipes');
       return response.data;
     }
   );
@@ -12,7 +12,7 @@ export const fetchRecipes = createAsyncThunk(
 export const addRecipe = createAsyncThunk(
     'recipes/add',
     async (recipe) => {
-      const response = await axios.post('http://localhost:5050/recipes', recipe);
+      const response = await axios.post('http://127.0.0.1:5050/recipes', recipe);
       if(!response.ok) {
         throw new Error("Something went wrong with the POST request")
     }
@@ -23,7 +23,7 @@ export const addRecipe = createAsyncThunk(
 export const editRecipe = createAsyncThunk(
     'recipes/edit',
     async (recipe) => {
-      const response = await axios.put(`http://localhost:5050/recipes${recipe.id}`);
+      const response = await axios.put(`http://127.0.0.1:5050/recipes${recipe.id}`);
       if(!response.ok) {
         throw new Error("Something went wrong with the PUT request")
     }
@@ -37,7 +37,7 @@ export const editRecipe = createAsyncThunk(
 export const deleteRecipe = createAsyncThunk(
     'recipes/delete',
     async (selectedRecipe) => {
-      const response = await axios.delete(`http://localhost:5050/recipes${selectedRecipe.id}`);
+      const response = await axios.delete(`http://127.0.0.1:5050/recipes${selectedRecipe.id}`);
       if(!response.ok) {
         throw new Error("Something went wrong during the DELETE request")
     }

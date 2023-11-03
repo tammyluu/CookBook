@@ -1,7 +1,6 @@
 import classes from "./Modal.module.css"
 
 const Modal = (props) => {
-
     const handleBackgroundClick = () => {
         props.onClose()
     }
