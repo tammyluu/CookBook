@@ -18,7 +18,6 @@ export class DataStore {
   static write() {
     // On sérialise notre objet dans un fichier
     writeFileSync(DataStore.file, JSON.stringify(this.data));
-    console.log("Data registered successfully");
   }
 
   // réinitialise la db

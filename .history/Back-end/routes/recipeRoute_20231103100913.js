@@ -31,9 +31,8 @@ recipe.put('/:id', authMiddleware, (req, res) => {
     return recipeDao.updateRecipe(recipe) ? res.sendStatus(409) :res.json(recipe)
 });
 recipe.delete('/:id', authMiddleware, (req, res) => {
-    console.log(req.params.id);
+    console.log(req.params);
     recipeDao.deleteRecipe(req.params.id);
-    console.log("recipe deleted " + req.params.id);
     res.sendStatus(204);
 });
 

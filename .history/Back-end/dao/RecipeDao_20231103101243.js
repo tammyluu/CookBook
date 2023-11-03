@@ -26,21 +26,21 @@ export default class RecipeDao {
         console.log(recipe.ingredients)
         console.log(typeof recipe.ingredients);
             // Vérifier que les ingredients existent
-       /*  recipe.ingredients.forEach((ingr) => {
+        recipe.ingredients.forEach((ingr) => {
           if (ingredientDao.getOneById(ingr.id) === undefined) {
             throw new Error(`Unable to find the ingredient with id: ${ingr.id}`);
           }
           
-        });  */
+        }); 
         DataStore.data.recipes.push(recipe);
         DataStore.write();
         return recipe;
     }
     deleteRecipe(id) {
       DataStore.data.recipes = DataStore.data.recipes.filter((recipe) => recipe.id !== id);
-      console.log("recipe is deleted");
+      console.log(recipes);
       DataStore.write();
-      console.log(DataStore.data.recipes);
+      
     }
     updateRecipe(recipeUpDate) {
         const recipe = this.getOneById(recipeUpDate.id);

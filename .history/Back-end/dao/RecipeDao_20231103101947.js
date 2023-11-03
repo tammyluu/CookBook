@@ -40,7 +40,7 @@ export default class RecipeDao {
       DataStore.data.recipes = DataStore.data.recipes.filter((recipe) => recipe.id !== id);
       console.log("recipe is deleted");
       DataStore.write();
-      console.log(DataStore.data.recipes);
+      cgl
     }
     updateRecipe(recipeUpDate) {
         const recipe = this.getOneById(recipeUpDate.id);
