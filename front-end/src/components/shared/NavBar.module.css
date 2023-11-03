@@ -5,7 +5,7 @@ ul {
   }
 
   .navbar {
-    background-color: #1D5B79; 
+    background: linear-gradient(to right, #1D5B79, #89C6D0);
   }
 
   .navbarNav .navItem .nav-link {
