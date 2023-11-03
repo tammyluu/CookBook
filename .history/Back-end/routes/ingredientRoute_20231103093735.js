@@ -23,7 +23,7 @@ ingr.post('/', authMiddleware, (req, res) => {
     let ingredient = new Ingredient(null, name, quantity);
     res.json(ingredientDao.save(ingredient));
 });
-ingr.put('/:id', authMiddleware, (req, res) => {
+ingr.put('/', authMiddleware, (req, res) => {
     const {id,name, quantity} = req.body;
     if(req.params.id!=req.body.id) return res.sendStatus(409);
     let ingredient = new Ingredient(id, name, quantity);

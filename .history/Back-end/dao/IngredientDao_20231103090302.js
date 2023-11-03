@@ -32,7 +32,6 @@ export default class IngredientDao {
         ingredient.name = ingredientUpdate.name;
         ingredient.quantity= ingredientUpdate.quantity;
         DataStore.write();
-        console.log("Ingredient modified");
         return true;
     }
 
